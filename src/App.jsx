@@ -1035,23 +1035,68 @@ function App() {
         href="https://wa.me/5491158588382" 
         target="_blank" 
         rel="noopener noreferrer"
-        className={`fixed bottom-4 right-4 md:bottom-6 md:right-6 text-white w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center transition-all duration-300 z-[60] shadow-lg hover:shadow-xl transform hover:scale-110 ${isPageLoaded ? 'opacity-100' : 'opacity-0'}`}
-        style={{backgroundColor: '#25D366'}}
-        onMouseEnter={(e) => e.target.style.backgroundColor = '#128C7E'}
-        onMouseLeave={(e) => e.target.style.backgroundColor = '#25D366'}
+        style={{
+          position: 'fixed',
+          bottom: '16px',
+          right: '16px',
+          zIndex: 60,
+          backgroundColor: '#25D366',
+          color: 'white',
+          width: '48px',
+          height: '48px',
+          borderRadius: '50%',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          textDecoration: 'none',
+          boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+          transition: 'all 0.3s ease',
+          opacity: isPageLoaded ? 1 : 0
+        }}
+        onMouseEnter={(e) => {
+          e.target.style.backgroundColor = '#128C7E';
+          e.target.style.transform = 'scale(1.1)';
+        }}
+        onMouseLeave={(e) => {
+          e.target.style.backgroundColor = '#25D366';
+          e.target.style.transform = 'scale(1)';
+        }}
       >
-        <i className="fab fa-whatsapp text-lg md:text-2xl"></i>
+        <i className="fab fa-whatsapp text-lg"></i>
       </a>
 
       {/* Back to Top Button */}
       <button 
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        className={`fixed bottom-4 right-20 md:bottom-6 md:right-24 text-white w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center transition-colors z-[50] btn-animate ${isPageLoaded ? 'opacity-100' : 'opacity-0'}`}
-        style={{backgroundColor: '#56818F'}}
-        onMouseEnter={(e) => e.target.style.backgroundColor = '#293949'}
-        onMouseLeave={(e) => e.target.style.backgroundColor = '#56818F'}
+        style={{
+          position: 'fixed',
+          bottom: '16px',
+          right: '80px',
+          zIndex: 50,
+          backgroundColor: '#56818F',
+          color: 'white',
+          width: '40px',
+          height: '40px',
+          borderRadius: '50%',
+          border: 'none',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          cursor: 'pointer',
+          boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+          transition: 'all 0.3s ease',
+          opacity: isPageLoaded ? 1 : 0
+        }}
+        onMouseEnter={(e) => {
+          e.target.style.backgroundColor = '#293949';
+          e.target.style.transform = 'scale(1.1)';
+        }}
+        onMouseLeave={(e) => {
+          e.target.style.backgroundColor = '#56818F';
+          e.target.style.transform = 'scale(1)';
+        }}
       >
-        <i className="fas fa-angle-double-up text-sm md:text-base"></i>
+        <i className="fas fa-angle-double-up text-sm"></i>
       </button>
 
       {/* MercadoPago Script */}
