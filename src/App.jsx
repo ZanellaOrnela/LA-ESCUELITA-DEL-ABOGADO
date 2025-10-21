@@ -1065,8 +1065,8 @@ function App() {
         zIndex: 60,
         backgroundColor: '#25D366',
         color: 'white',
-        width: '48px',
-        height: '48px',
+        width: '56px',
+        height: '56px',
         borderRadius: '50%',
         display: 'flex',
         alignItems: 'center',
@@ -1085,7 +1085,7 @@ function App() {
         e.target.style.transform = 'scale(1)';
       }}
     >
-      <i className="fab fa-whatsapp text-lg"></i>
+      <i className="fab fa-whatsapp text-xl"></i>
     </a>
 
     {/* Back to Top Button - Outside main container */}
@@ -1094,12 +1094,12 @@ function App() {
       style={{
         position: 'fixed',
         bottom: '16px',
-        right: '80px',
+        right: '88px',
         zIndex: 50,
         backgroundColor: '#56818F',
         color: 'white',
-        width: '40px',
-        height: '40px',
+        width: '48px',
+        height: '48px',
         borderRadius: '50%',
         border: 'none',
         display: 'flex',
@@ -1119,7 +1119,7 @@ function App() {
         e.target.style.transform = 'scale(1)';
       }}
     >
-      <i className="fas fa-angle-double-up text-sm"></i>
+      <i className="fas fa-angle-double-up text-base"></i>
     </button>
     </>
   )
