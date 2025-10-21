@@ -64,6 +64,7 @@ function App() {
   }
 
   return (
+    <>
     <div className={`min-h-screen overflow-x-hidden ${isPageLoaded ? 'page-enter-active' : 'page-enter'}`}>
       {/* Topbar */}
       <div className="py-12 md:py-16 relative" style={{backgroundColor: '#293949'}}>
@@ -1030,75 +1031,6 @@ function App() {
         </div>
       </footer>
 
-      {/* WhatsApp Floating Button */}
-      <a 
-        href="https://wa.me/5491158588382" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        style={{
-          position: 'fixed',
-          bottom: '16px',
-          right: '16px',
-          zIndex: 60,
-          backgroundColor: '#25D366',
-          color: 'white',
-          width: '48px',
-          height: '48px',
-          borderRadius: '50%',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          textDecoration: 'none',
-          boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
-          transition: 'all 0.3s ease',
-          opacity: isPageLoaded ? 1 : 0
-        }}
-        onMouseEnter={(e) => {
-          e.target.style.backgroundColor = '#128C7E';
-          e.target.style.transform = 'scale(1.1)';
-        }}
-        onMouseLeave={(e) => {
-          e.target.style.backgroundColor = '#25D366';
-          e.target.style.transform = 'scale(1)';
-        }}
-      >
-        <i className="fab fa-whatsapp text-lg"></i>
-      </a>
-
-      {/* Back to Top Button */}
-      <button 
-        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        style={{
-          position: 'fixed',
-          bottom: '16px',
-          right: '80px',
-          zIndex: 50,
-          backgroundColor: '#56818F',
-          color: 'white',
-          width: '40px',
-          height: '40px',
-          borderRadius: '50%',
-          border: 'none',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          cursor: 'pointer',
-          boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
-          transition: 'all 0.3s ease',
-          opacity: isPageLoaded ? 1 : 0
-        }}
-        onMouseEnter={(e) => {
-          e.target.style.backgroundColor = '#293949';
-          e.target.style.transform = 'scale(1.1)';
-        }}
-        onMouseLeave={(e) => {
-          e.target.style.backgroundColor = '#56818F';
-          e.target.style.transform = 'scale(1)';
-        }}
-      >
-        <i className="fas fa-angle-double-up text-sm"></i>
-      </button>
-
       {/* MercadoPago Script */}
       <script type="text/javascript" dangerouslySetInnerHTML={{
         __html: `
@@ -1120,6 +1052,76 @@ function App() {
       }} />
 
     </div>
+
+    {/* WhatsApp Floating Button - Outside main container */}
+    <a 
+      href="https://wa.me/5491158588382" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      style={{
+        position: 'fixed',
+        bottom: '16px',
+        right: '16px',
+        zIndex: 60,
+        backgroundColor: '#25D366',
+        color: 'white',
+        width: '48px',
+        height: '48px',
+        borderRadius: '50%',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        textDecoration: 'none',
+        boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+        transition: 'all 0.3s ease',
+        opacity: isPageLoaded ? 1 : 0
+      }}
+      onMouseEnter={(e) => {
+        e.target.style.backgroundColor = '#128C7E';
+        e.target.style.transform = 'scale(1.1)';
+      }}
+      onMouseLeave={(e) => {
+        e.target.style.backgroundColor = '#25D366';
+        e.target.style.transform = 'scale(1)';
+      }}
+    >
+      <i className="fab fa-whatsapp text-lg"></i>
+    </a>
+
+    {/* Back to Top Button - Outside main container */}
+    <button 
+      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      style={{
+        position: 'fixed',
+        bottom: '16px',
+        right: '80px',
+        zIndex: 50,
+        backgroundColor: '#56818F',
+        color: 'white',
+        width: '40px',
+        height: '40px',
+        borderRadius: '50%',
+        border: 'none',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        cursor: 'pointer',
+        boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+        transition: 'all 0.3s ease',
+        opacity: isPageLoaded ? 1 : 0
+      }}
+      onMouseEnter={(e) => {
+        e.target.style.backgroundColor = '#293949';
+        e.target.style.transform = 'scale(1.1)';
+      }}
+      onMouseLeave={(e) => {
+        e.target.style.backgroundColor = '#56818F';
+        e.target.style.transform = 'scale(1)';
+      }}
+    >
+      <i className="fas fa-angle-double-up text-sm"></i>
+    </button>
+    </>
   )
 }
 
