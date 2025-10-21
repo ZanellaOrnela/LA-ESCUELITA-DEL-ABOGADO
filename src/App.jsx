@@ -172,7 +172,7 @@ function App() {
               <p className="text-lg md:text-xl mb-8 max-w-4xl mx-auto leading-relaxed">
                 Todo lo que necesitás para empezar a litigar con criterio, método y resultados. Entrenamiento práctico para empezar a litigar ya. Clases en vivo, modelos listos, simulaciones y soporte 365. Civil, Laboral, Penal, Familia y Sucesiones. Reservá tu lugar.
               </p>
-              <button className="btn-primary btn-animate px-8 py-4 text-lg font-semibold rounded-lg">
+              <button onClick={() => scrollToSection('subscription')} className="btn-primary btn-animate px-8 py-4 text-lg font-semibold rounded-lg">
                 Quiero empezar
               </button>
             </div>
@@ -190,7 +190,7 @@ function App() {
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
               Este es tu punto de partida. Subí de nivel, acelerá tu práctica y conectá con colegas que ya están en cancha.
             </p>
-            <button className="btn-primary px-8 py-4 text-lg font-semibold rounded-lg">
+            <button onClick={() => scrollToSection('subscription')} className="btn-primary px-8 py-4 text-lg font-semibold rounded-lg">
               Inscribirme ahora
             </button>
           </div>
@@ -426,7 +426,7 @@ function App() {
                 </div>
               </div>
               <div className="text-center">
-                <button className="btn-primary px-12 py-5 text-xl font-bold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                <button onClick={() => scrollToSection('subscription')} className="btn-primary px-12 py-5 text-xl font-bold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
                   <i className="fas fa-graduation-cap mr-3"></i>
                   Aprender ahora
                 </button>
@@ -722,7 +722,7 @@ function App() {
                 ))}
               </div>
               <div className="text-center">
-                <button className="btn-primary px-12 py-5 text-xl font-bold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                <button onClick={() => scrollToSection('subscription')} className="btn-primary px-12 py-5 text-xl font-bold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
                   <i className="fas fa-calendar-check mr-3"></i>
                   Reservar cupo
                 </button>
@@ -780,7 +780,7 @@ function App() {
                 ))}
               </div>
               <div className="text-center">
-                <button className="btn-primary px-12 py-5 text-xl font-bold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 bg-white text-gray-800 hover:bg-gray-100">
+                <button onClick={() => scrollToSection('subscription')} className="btn-primary px-12 py-5 text-xl font-bold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 bg-white text-gray-800 hover:bg-gray-100">
                   <i className="fas fa-unlock mr-3"></i>
                   Acceder ahora
                 </button>
@@ -804,7 +804,7 @@ function App() {
               <p className="text-lg text-gray-700 mb-12">
                 Nuestra misión: que trabajes ya, con criterio práctico, seguridad profesional y resultados concretos.
               </p>
-              <button className="btn-primary px-8 py-4 text-lg font-semibold rounded-lg">
+              <button onClick={() => scrollToSection('subscription')} className="btn-primary px-8 py-4 text-lg font-semibold rounded-lg">
                 Aprender con el Dr. Tucci
               </button>
             </div>
@@ -892,7 +892,7 @@ function App() {
                 Inscribite hoy y empezá a litigar con un método probado. Sumá práctica, criterio y una comunidad que potencia tu crecimiento desde el primer día.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="btn-primary px-8 py-4 text-lg font-semibold rounded-lg">
+                <button onClick={() => scrollToSection('subscription')} className="btn-primary px-8 py-4 text-lg font-semibold rounded-lg">
                   Inscribirme ahora
                 </button>
                 <button className="btn-secondary px-8 py-4 text-lg font-semibold rounded-lg">
@@ -905,19 +905,19 @@ function App() {
       </section>
 
       {/* Subscription Section */}
-      <section id="subscription" className={`py-16 bg-white section-fade-in ${visibleSections.has('subscription') ? 'visible' : ''}`}>
+      <section id="subscription" className={`py-16 section-fade-in ${visibleSections.has('subscription') ? 'visible' : ''}`} style={{backgroundColor: '#56818F'}}>
         <div className="container mx-auto px-6">
           <div className="text-center">
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 relative">
+            <h1 className="text-3xl md:text-4xl font-bold text-white mb-8 relative">
               Inscripción al Curso
-              <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1 rounded-full" style={{backgroundColor: '#56818F'}}></div>
+              <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1 rounded-full bg-white"></div>
             </h1>
             <div className="max-w-4xl mx-auto">
-              <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 md:p-12 shadow-lg">
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+              <div className="bg-white rounded-2xl p-8 md:p-12 shadow-2xl">
+                <h2 className="text-2xl md:text-3xl font-bold mb-6" style={{color: '#293949'}}>
                   ¡Reservá tu lugar ahora!
                 </h2>
-                <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
+                <p className="text-lg mb-8 max-w-2xl mx-auto" style={{color: '#293949'}}>
                   Accedé al entrenamiento práctico 5 en 1 del Dr. Tucci. Clases en vivo, modelos listos, simulaciones y soporte 365 días.
                 </p>
                 
@@ -926,20 +926,15 @@ function App() {
                   <a 
                     href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=e9b8e341bee743d0872bb829afa510ff" 
                     name="MP-payButton" 
-                    className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                    className="inline-flex items-center px-8 py-4 text-white font-bold rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
                     style={{
-                      backgroundColor: '#3483FA',
+                      backgroundColor: '#56818F',
                       color: 'white',
-                      padding: '16px 32px',
                       textDecoration: 'none',
-                      borderRadius: '8px',
-                      display: 'inline-block',
-                      fontSize: '18px',
-                      transition: 'all 0.3s',
                       fontFamily: 'Poppins, sans-serif'
                     }}
-                    onMouseEnter={(e) => e.target.style.backgroundColor = '#2a68c8'}
-                    onMouseLeave={(e) => e.target.style.backgroundColor = '#3483FA'}
+                    onMouseEnter={(e) => e.target.style.backgroundColor = '#293949'}
+                    onMouseLeave={(e) => e.target.style.backgroundColor = '#56818F'}
                   >
                     <i className="fas fa-credit-card mr-3"></i>
                     Suscribirme al Curso
@@ -947,38 +942,41 @@ function App() {
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-6 mb-8">
-                  <div className="text-center">
+                  <div className="text-center p-6 rounded-xl" style={{backgroundColor: '#f8f9fa'}}>
                     <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{backgroundColor: '#56818F'}}>
                       <i className="fas fa-shield-alt text-white text-2xl"></i>
                     </div>
-                    <h3 className="font-bold text-gray-900 mb-2">Pago Seguro</h3>
-                    <p className="text-sm text-gray-600">Protegido por MercadoPago</p>
+                    <h3 className="font-bold mb-2" style={{color: '#293949'}}>Pago Seguro</h3>
+                    <p className="text-sm" style={{color: '#293949'}}>Protegido por MercadoPago</p>
                   </div>
-                  <div className="text-center">
+                  <div className="text-center p-6 rounded-xl" style={{backgroundColor: '#f8f9fa'}}>
                     <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{backgroundColor: '#56818F'}}>
                       <i className="fas fa-clock text-white text-2xl"></i>
                     </div>
-                    <h3 className="font-bold text-gray-900 mb-2">Acceso Inmediato</h3>
-                    <p className="text-sm text-gray-600">Empieza hoy mismo</p>
+                    <h3 className="font-bold mb-2" style={{color: '#293949'}}>Acceso Inmediato</h3>
+                    <p className="text-sm" style={{color: '#293949'}}>Empieza hoy mismo</p>
                   </div>
-                  <div className="text-center">
+                  <div className="text-center p-6 rounded-xl" style={{backgroundColor: '#f8f9fa'}}>
                     <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{backgroundColor: '#56818F'}}>
                       <i className="fas fa-headset text-white text-2xl"></i>
                     </div>
-                    <h3 className="font-bold text-gray-900 mb-2">Soporte 365</h3>
-                    <p className="text-sm text-gray-600">Acompañamiento completo</p>
+                    <h3 className="font-bold mb-2" style={{color: '#293949'}}>Soporte 365</h3>
+                    <p className="text-sm" style={{color: '#293949'}}>Acompañamiento completo</p>
                   </div>
                 </div>
 
                 <div className="text-center">
-                  <p className="text-sm text-gray-600 mb-4">
+                  <p className="text-sm mb-4" style={{color: '#293949'}}>
                     ¿Tenés dudas? Contactanos por WhatsApp
                   </p>
                   <a 
                     href="https://wa.me/5491158588382" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="inline-flex items-center px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition-colors"
+                    className="inline-flex items-center px-6 py-3 text-white font-semibold rounded-lg transition-colors"
+                    style={{backgroundColor: '#25D366'}}
+                    onMouseEnter={(e) => e.target.style.backgroundColor = '#128C7E'}
+                    onMouseLeave={(e) => e.target.style.backgroundColor = '#25D366'}
                   >
                     <i className="fab fa-whatsapp mr-2"></i>
                     +54 9 11 5858-8382
