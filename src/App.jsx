@@ -1179,7 +1179,7 @@ function App() {
                 {/* MercadoPago Button */}
                 <div className="mb-8">
                   <a 
-                    href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=e9b8e341bee743d0872bb829afa510ff" 
+                    href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=5a70650a1b124db1aeebe81a4908b9ee" 
                     name="MP-payButton" 
                     className="inline-flex items-center px-8 py-4 text-white font-bold rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
                     style={{
