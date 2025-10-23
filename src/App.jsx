@@ -117,12 +117,15 @@ function App() {
                 <button onClick={() => scrollToSection('how-we-do-it')} className="nav-btn text-sm xl:text-base">
                   Metodología
                 </button>
-                <button onClick={() => scrollToSection('results')} className="nav-btn text-sm xl:text-base">
-                  Testimonios
-                </button>
-                <button onClick={() => scrollToSection('subscription')} className="nav-btn text-sm xl:text-base">
-                  Inscripción
-                </button>
+              <button onClick={() => scrollToSection('results')} className="nav-btn text-sm xl:text-base">
+                Testimonios
+              </button>
+              <button onClick={() => scrollToSection('social-feeds')} className="nav-btn text-sm xl:text-base">
+                Redes Sociales
+              </button>
+              <button onClick={() => scrollToSection('subscription')} className="nav-btn text-sm xl:text-base">
+                Inscripción
+              </button>
               </div>
             </div>
             
@@ -143,6 +146,9 @@ function App() {
                 </button>
                 <button onClick={() => scrollToSection('results')} className="nav-btn block w-full text-left text-sm py-4 px-6 border-b border-gray-100 hover:bg-gray-50 transition-colors">
                   Testimonios
+                </button>
+                <button onClick={() => scrollToSection('social-feeds')} className="nav-btn block w-full text-left text-sm py-4 px-6 border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                  Redes Sociales
                 </button>
                 <button onClick={() => scrollToSection('subscription')} className="nav-btn block w-full text-left text-sm py-4 px-6 hover:bg-gray-50 transition-colors">
                   Inscripción
@@ -165,13 +171,13 @@ function App() {
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center text-white max-w-5xl px-6">
               <h4 className="text-2xl md:text-3xl mb-4 uppercase tracking-wider">
-                Litigá desde el día uno
+                CURSO PRÁCTICO DEL DR. TUCCI
               </h4>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
-                Entrenamiento práctico 5 en 1 del Dr. Tucci
+                TODO LO QUE NECESITÁS PARA TRABAJAR DE ABOGADO YA, SIN MIEDO
               </h1>
               <p className="text-lg md:text-xl mb-8 max-w-4xl mx-auto leading-relaxed">
-                Todo lo que necesitás para empezar a litigar con criterio, método y resultados. Entrenamiento práctico para empezar a litigar ya. Clases en vivo, modelos listos, simulaciones y soporte 365. Civil, Laboral, Penal, Familia y Sucesiones. Reservá tu lugar.
+                Aprendé a litigar desde el primer día y dominá la práctica profesional del derecho. ¿Tenés miedo de salir a ejercer la profesión? ¿Querés ganar experiencia real y trabajar sin inseguridad? En La Escuelita del Abogado te enseñamos a litigar con casos reales, escritos auténticos y simulaciones procesales. Soporte 365 días del año.
               </p>
               <button onClick={() => scrollToSection('subscription')} className="btn-primary btn-animate px-8 py-4 text-lg font-semibold rounded-lg">
                 Quiero empezar
@@ -186,10 +192,10 @@ function App() {
         <div className="container mx-auto px-6">
           <div className="text-center">
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Cupos limitados
+              Este es tu punto de partida
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-              Este es tu punto de partida. Subí de nivel, acelerá tu práctica y conectá con colegas que ya están en cancha.
+              Subí de nivel, acelerá tu práctica y conectá con colegas que ya están en la cancha.
             </p>
             <button onClick={() => scrollToSection('subscription')} className="btn-primary px-8 py-4 text-lg font-semibold rounded-lg">
               Inscribirme ahora
@@ -204,7 +210,7 @@ function App() {
           <div className="text-center ">
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 relative">
               ¿Es para vos?
-              <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1 rounded-full" style={{backgroundColor: '#56818F'}}></div>
+              <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-20 h-1 rounded-full" style={{backgroundColor: '#56818F'}}></div>
             </h1>
             <div className="max-w-5xl mx-auto">
               <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -261,8 +267,8 @@ function App() {
         <div className="container mx-auto px-6">
           <div className="text-center">
             <h1 className="text-3xl md:text-4xl font-bold text-white mb-8 relative">
-              Lo que te llevás (y empezás a usar ya)
-              <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1 rounded-full bg-white"></div>
+              Beneficios Exclusivos – Tu ventaja profesional
+              <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-20 h-1 rounded-full bg-white"></div>
             </h1>
             <div className="max-w-6xl mx-auto">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
@@ -279,7 +285,7 @@ function App() {
                     <i className="fas fa-hands-helping text-white text-lg"></i>
                   </div>
                   <p className="text-lg text-white font-medium">
-                    <strong>Acompañamiento directo en tus expedientes.</strong>
+                    <strong>Asesoramiento directo en tus propios casos – nunca estarás solo.</strong>
                   </p>
                 </div>
                 <div className="flex items-start space-x-4 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 bg-white bg-opacity-10 backdrop-blur-sm border border-white border-opacity-20">
@@ -287,7 +293,7 @@ function App() {
                     <i className="fas fa-file-alt text-white text-lg"></i>
                   </div>
                   <p className="text-lg text-white font-medium">
-                    <strong>Cientos de escritos y modelos de demandas reutilizables.</strong>
+                    <strong>Cientos de escritos judiciales y modelos de demandas listos para usar.</strong>
                   </p>
                 </div>
                 <div className="flex items-start space-x-4 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 bg-white bg-opacity-10 backdrop-blur-sm border border-white border-opacity-20">
@@ -295,7 +301,7 @@ function App() {
                     <i className="fas fa-headset text-white text-lg"></i>
                   </div>
                   <p className="text-lg text-white font-medium">
-                    <strong>Soporte 365 días por celular y correo.</strong>
+                    <strong>Apoyo y consultas por celular y correo los 365 días del año.</strong>
                   </p>
                 </div>
                 <div className="flex items-start space-x-4 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 bg-white bg-opacity-10 backdrop-blur-sm border border-white border-opacity-20">
@@ -303,7 +309,7 @@ function App() {
                     <i className="fab fa-whatsapp text-white text-lg"></i>
                   </div>
                   <p className="text-lg text-white font-medium">
-                    <strong>Grupo privado de WhatsApp + comunidad activa.</strong>
+                    <strong>Grupo privado de WhatsApp + comunidad activa de colegas.</strong>
                   </p>
                 </div>
                 <div className="flex items-start space-x-4 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 bg-white bg-opacity-10 backdrop-blur-sm border border-white border-opacity-20">
@@ -311,7 +317,15 @@ function App() {
                     <i className="fas fa-brain text-white text-lg"></i>
                   </div>
                   <p className="text-lg text-white font-medium">
-                    <strong>Resúmenes inteligentes de cada clase.</strong>
+                    <strong>Resúmenes generados por IA de cada clase.</strong>
+                  </p>
+                </div>
+                <div className="flex items-start space-x-4 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 bg-white bg-opacity-10 backdrop-blur-sm border border-white border-opacity-20">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center bg-white bg-opacity-20">
+                    <i className="fas fa-graduation-cap text-white text-lg"></i>
+                  </div>
+                  <p className="text-lg text-white font-medium">
+                    <strong>Entrenamiento completo en Civil, Laboral, Penal, Familia y Sucesiones.</strong>
                   </p>
                 </div>
               </div>
@@ -331,10 +345,13 @@ function App() {
         <div className="container mx-auto px-6">
           <div className="text-center">
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 relative">
-              ¿Qué vas a dominar? (práctica real, aplicable hoy)
-              <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1 rounded-full" style={{backgroundColor: '#56818F'}}></div>
+              Qué vas a aprender – La práctica profesional del derecho
+              <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-20 h-1 rounded-full" style={{backgroundColor: '#56818F'}}></div>
             </h1>
             <div className="max-w-6xl mx-auto">
+              <p className="text-lg text-gray-700 mb-8 max-w-4xl mx-auto">
+                En este curso vas a aprender a litigar desde el primer día, no a memorizar teoría inútil. Te enseñaremos todo el desarrollo judicial, DESDE LA PRÁCTICA PROFESIONAL, en estas 5 áreas del derecho. Aquí te convertirás en especialista y dominarás la práctica profesional:
+              </p>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
                 <div className="bg-white rounded-lg p-6 border border-gray-200 h-48 flex flex-col justify-between">
                   <div className="flex items-center justify-between mb-4">
@@ -535,7 +552,7 @@ function App() {
           <div className="text-center ">
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 relative">
               Cómo lo hacemos
-              <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1 rounded-full" style={{backgroundColor: '#56818F'}}></div>
+              <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-20 h-1 rounded-full" style={{backgroundColor: '#56818F'}}></div>
             </h1>
             <div className="max-w-6xl mx-auto">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
@@ -544,31 +561,31 @@ function App() {
                     icon: "fas fa-clock",
                     title: "Miércoles 18 hs",
                     description: "En vivo, con casos reales.",
-                    image: "https://media.gq.com.mx/photos/63ed0e1e1413263c630bc0d6/16:9/w_2560%2Cc_limit/relojes-para-hombre-en-tendencia-2023-con-look-profesional.jpg"
+                    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
                   },
                   {
                     icon: "fas fa-play-circle", 
                     title: "Simulaciones",
                     description: "Procesales para fijar el método.",
-                    image: "https://cercademi.net/wp-content/uploads/2022/09/abogados-cerca-de-mi-1024x576.jpg"
+                    image: "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
                   },
                   {
                     icon: "fas fa-file-alt",
                     title: "Modelos y plantillas", 
                     description: "Para acelerar tu trabajo.",
-                    image: "https://enews.mx/foto/noticias/noticias_20180528183254_1059.jpg"
+                    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
                   },
                   {
                     icon: "fas fa-headset",
                     title: "Acompañamiento",
                     description: "Personalizado por celular y correo todo el año.",
-                    image: "https://i0.wp.com/lcrnoticias.com/wp-content/uploads/2023/02/image-154.png?resize=805%2C499&ssl=1"
+                    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
                   },
                   {
                     icon: "fas fa-brain",
                     title: "Resúmenes inteligentes",
                     description: "Para estudiar mejor y más rápido.",
-                    image: "https://cancun.anahuac.mx/hs-fs/hubfs/reciben-premio-ceneval-al-desempeno-de-excelencia-alumnos-universidad-anahuac-cancun.jpg?width=1056&name=reciben-premio-ceneval-al-desempeno-de-excelencia-alumnos-universidad-anahuac-cancun.jpg"
+                    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
                   }
                 ].map((item, index) => (
                   <div key={index} className="text-center">
@@ -582,9 +599,9 @@ function App() {
                     <div className="bg-gray-50 rounded-lg p-6 -mt-16 pt-20">
                       <h5 className="text-xl font-semibold mb-4">{item.title}</h5>
                       <p className="text-gray-600 mb-4">{item.description}</p>
-                      <a href="#" className="border-b transition-colors" style={{color: '#56818F', borderColor: '#56818F'}} onMouseEnter={(e) => e.target.style.color = '#293949'} onMouseLeave={(e) => e.target.style.color = '#56818F'}>
+                      <button onClick={() => scrollToSection('subscription')} className="border-b transition-colors" style={{color: '#56818F', borderColor: '#56818F'}} onMouseEnter={(e) => e.target.style.color = '#293949'} onMouseLeave={(e) => e.target.style.color = '#56818F'}>
                         Ver más
-                      </a>
+                      </button>
                     </div>
                   </div>
                 ))}
@@ -605,15 +622,15 @@ function App() {
         <div className="container mx-auto px-6">
           <div className="text-center ">
             <h1 className="text-3xl md:text-4xl font-bold text-white mb-8 relative">
-              Resultados que importan
-              <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1 rounded-full bg-white"></div>
+              Resultados concretos que vas a lograr
+              <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-20 h-1 rounded-full bg-white"></div>
             </h1>
             <div className="max-w-6xl mx-auto">
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
                 {[
                   { 
-                    name: "Trabajar desde el día uno", 
-                    description: "Como abogado desde el primer día",
+                    name: "Trabajá como abogado desde el primer día", 
+                    description: "Con seguridad y experiencia práctica",
                     price: "Día 1",
                     icon: (
                       <svg className="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -622,8 +639,8 @@ function App() {
                     )
                   },
                   { 
-                    name: "Confianza en audiencias", 
-                    description: "Con método y claridad",
+                    name: "Dominá la práctica profesional sin miedo", 
+                    description: "A enfrentar audiencias o juicios",
                     price: "100%",
                     icon: (
                       <svg className="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -632,8 +649,8 @@ function App() {
                     )
                   },
                   { 
-                    name: "Tu propio estudio", 
-                    description: "Listo para el área que elijas",
+                    name: "Salí preparado para ejercer", 
+                    description: "En tu propio estudio o en cualquier área profesional que elijas",
                     price: "Listo",
                     icon: (
                       <svg className="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -642,8 +659,8 @@ function App() {
                     )
                   },
                   { 
-                    name: "Red profesional", 
-                    description: "Con amplia trayectoria",
+                    name: "Conectate con una red de profesionales", 
+                    description: "Con más de 20 años de experiencia",
                     price: "20+ años",
                     icon: (
                       <svg className="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -661,9 +678,6 @@ function App() {
                     </div>
                     <h5 className="text-xl font-bold mb-4">{result.name}</h5>
                     <p className="text-gray-600 mb-4">{result.description}</p>
-                    <button className="btn-secondary px-6 py-2 rounded-lg">
-                      Ver más
-                    </button>
                   </div>
                 ))}
               </div>
@@ -684,7 +698,7 @@ function App() {
           <div className="text-center ">
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 relative">
               Modalidad y acceso
-              <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1 rounded-full" style={{backgroundColor: '#56818F'}}></div>
+              <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-20 h-1 rounded-full" style={{backgroundColor: '#56818F'}}></div>
             </h1>
             <div className="max-w-6xl mx-auto">
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
@@ -710,13 +724,13 @@ function App() {
                     description: "Para consultas y networking"
                   }
                 ].map((item, index) => (
-                  <div key={index} className="text-center p-8 rounded-lg hover:shadow-lg transition-all duration-300" style={{backgroundColor: index % 2 === 0 ? '#f8f9fa' : '#e9ecef'}}>
+                  <div key={index} className="text-center p-8 rounded-lg hover:shadow-lg transition-all duration-300 flex flex-col h-full" style={{backgroundColor: index % 2 === 0 ? '#f8f9fa' : '#e9ecef'}}>
                     <div className="w-20 h-20 mx-auto mb-6 rounded-full flex items-center justify-center" style={{backgroundColor: '#56818F'}}>
                       <i className={`${item.icon} text-white text-2xl`}></i>
                     </div>
                     <h3 className="text-xl font-bold mb-4" style={{color: '#293949'}}>{item.title}</h3>
-                    <p className="text-gray-600 mb-6">{item.description}</p>
-                    <button className="px-6 py-2 rounded-lg text-sm font-semibold transition-colors" style={{backgroundColor: '#56818F', color: 'white'}} onMouseEnter={(e) => e.target.style.backgroundColor = '#293949'} onMouseLeave={(e) => e.target.style.backgroundColor = '#56818F'}>
+                    <p className="text-gray-600 mb-6 flex-grow">{item.description}</p>
+                    <button className="px-6 py-2 rounded-lg text-sm font-semibold transition-colors mt-auto" style={{backgroundColor: '#56818F', color: 'white'}} onMouseEnter={(e) => e.target.style.backgroundColor = '#293949'} onMouseLeave={(e) => e.target.style.backgroundColor = '#56818F'}>
                       Más info
                     </button>
                   </div>
@@ -739,7 +753,7 @@ function App() {
           <div className="text-center ">
             <h1 className="text-3xl md:text-4xl font-bold text-white mb-8 relative">
               Todo lo que incluye
-              <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1 rounded-full bg-white"></div>
+              <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-20 h-1 rounded-full bg-white"></div>
             </h1>
             <div className="max-w-6xl mx-auto">
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
@@ -796,15 +810,39 @@ function App() {
         <div className="container mx-auto px-6">
           <div className="text-center ">
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
-              Quién te acompaña
+              Por qué elegir La Escuelita del Abogado
             </h1>
             <div className="max-w-4xl mx-auto">
-              <p className="text-lg text-gray-700 mb-8">
-                El Dr. Tucci y el equipo de La Escuelita del Abogado forman colegas en ejercicio real, con más de 20 años de experiencia combinada.
-              </p>
-              <p className="text-lg text-gray-700 mb-12">
-                Nuestra misión: que trabajes ya, con criterio práctico, seguridad profesional y resultados concretos.
-              </p>
+              <div className="grid md:grid-cols-2 gap-8 mb-8">
+                <div className="text-center p-6 rounded-lg flex flex-col h-full" style={{backgroundColor: '#f8f9fa'}}>
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{backgroundColor: '#56818F'}}>
+                    <i className="fas fa-graduation-cap text-white text-2xl"></i>
+                  </div>
+                  <h3 className="text-xl font-bold mb-4" style={{color: '#293949'}}>Formación práctica y actualizada</h3>
+                  <p className="text-gray-600 flex-grow">Adaptada al mercado legal argentino</p>
+                </div>
+                <div className="text-center p-6 rounded-lg flex flex-col h-full" style={{backgroundColor: '#f8f9fa'}}>
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{backgroundColor: '#56818F'}}>
+                    <i className="fas fa-users text-white text-2xl"></i>
+                  </div>
+                  <h3 className="text-xl font-bold mb-4" style={{color: '#293949'}}>Acceso a una comunidad</h3>
+                  <p className="text-gray-600 flex-grow">De abogados con amplia trayectoria</p>
+                </div>
+                <div className="text-center p-6 rounded-lg flex flex-col h-full" style={{backgroundColor: '#f8f9fa'}}>
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{backgroundColor: '#56818F'}}>
+                    <i className="fas fa-headset text-white text-2xl"></i>
+                  </div>
+                  <h3 className="text-xl font-bold mb-4" style={{color: '#293949'}}>Soporte continuo y personalizado</h3>
+                  <p className="text-gray-600 flex-grow">Nunca estarás solo</p>
+                </div>
+                <div className="text-center p-6 rounded-lg flex flex-col h-full" style={{backgroundColor: '#f8f9fa'}}>
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{backgroundColor: '#56818F'}}>
+                    <i className="fas fa-tools text-white text-2xl"></i>
+                  </div>
+                  <h3 className="text-xl font-bold mb-4" style={{color: '#293949'}}>Herramientas y recursos</h3>
+                  <p className="text-gray-600 flex-grow">De vanguardia para potenciar tu aprendizaje</p>
+                </div>
+              </div>
               <button onClick={() => scrollToSection('subscription')} className="btn-primary px-8 py-4 text-lg font-semibold rounded-lg">
                 Aprender con el Dr. Tucci
               </button>
@@ -851,6 +889,109 @@ function App() {
         </div>
       </section>
 
+      {/* Social Media Feeds Section */}
+      <section id="social-feeds" className={`py-16 bg-gray-50 section-fade-in ${visibleSections.has('social-feeds') ? 'visible' : ''}`}>
+        <div className="container mx-auto px-6">
+          <div className="text-center">
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 relative">
+              Seguinos en redes sociales
+              <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-20 h-1 rounded-full" style={{backgroundColor: '#56818F'}}></div>
+            </h1>
+            <p className="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+              Contenido educativo, consejos prácticos y actualizaciones del curso en nuestras redes sociales.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
+              {/* TikTok Feed */}
+              <div className="bg-white rounded-lg p-4 md:p-6 shadow-lg hover:shadow-xl transition-shadow">
+                <div className="flex items-center mb-4">
+                  <i className="fab fa-tiktok text-xl md:text-2xl mr-3" style={{color: '#56818F'}}></i>
+                  <h3 className="text-lg md:text-xl font-bold text-gray-900">TikTok</h3>
+                </div>
+                <div className="aspect-square bg-gray-100 rounded-lg overflow-hidden mb-4 relative">
+                  <iframe 
+                    src="https://www.tiktok.com/embed/@la.escuelita.del.abogado" 
+                    className="w-full h-full"
+                    frameBorder="0" 
+                    allowFullScreen
+                    title="TikTok Feed"
+                    onError={() => {
+                      // Fallback si el iframe no carga
+                      const container = document.querySelector('.tiktok-fallback');
+                      if (container) {
+                        container.innerHTML = `
+                          <div class="flex items-center justify-center h-full">
+                            <div class="text-center p-4">
+                              <i class="fab fa-tiktok text-4xl mb-2" style="color: #56818F;"></i>
+                              <p class="text-gray-600 text-sm">@la.escuelita.del.abogado</p>
+                              <p class="text-gray-500 text-xs">Contenido educativo en video</p>
+                            </div>
+                          </div>
+                        `;
+                      }
+                    }}
+                  ></iframe>
+                  <div className="tiktok-fallback absolute inset-0 bg-gray-100 flex items-center justify-center" style={{display: 'none'}}>
+                    <div className="text-center p-4">
+                      <i className="fab fa-tiktok text-4xl mb-2" style={{color: '#56818F'}}></i>
+                      <p className="text-gray-600 text-sm">@la.escuelita.del.abogado</p>
+                      <p className="text-gray-500 text-xs">Contenido educativo en video</p>
+                    </div>
+                  </div>
+                </div>
+                <a href="https://tiktok.com/@la.escuelita.del.abogado" target="_blank" rel="noopener noreferrer" className="w-full bg-black text-white py-2 md:py-3 px-3 md:px-4 rounded-lg flex items-center justify-center space-x-2 hover:bg-gray-800 transition-colors text-sm md:text-base">
+                  <i className="fab fa-tiktok"></i>
+                  <span>Ver más en TikTok</span>
+                </a>
+              </div>
+
+              {/* Instagram Feed */}
+              <div className="bg-white rounded-lg p-4 md:p-6 shadow-lg hover:shadow-xl transition-shadow">
+                <div className="flex items-center mb-4">
+                  <i className="fab fa-instagram text-xl md:text-2xl mr-3" style={{color: '#56818F'}}></i>
+                  <h3 className="text-lg md:text-xl font-bold text-gray-900">Instagram</h3>
+                </div>
+                <div className="aspect-square bg-gray-100 rounded-lg overflow-hidden mb-4 relative">
+                  <iframe 
+                    src="https://www.instagram.com/laescuelitadelabogado/embed" 
+                    className="w-full h-full"
+                    frameBorder="0" 
+                    allowFullScreen
+                    title="Instagram Feed"
+                    onError={() => {
+                      // Fallback si el iframe no carga
+                      const container = document.querySelector('.instagram-fallback');
+                      if (container) {
+                        container.innerHTML = `
+                          <div class="flex items-center justify-center h-full">
+                            <div class="text-center p-4">
+                              <i class="fab fa-instagram text-4xl mb-2" style="color: #56818F;"></i>
+                              <p class="text-gray-600 text-sm">@roberto_omar_tucci_abogado_ok</p>
+                              <p class="text-gray-500 text-xs">Consejos y actualizaciones</p>
+                            </div>
+                          </div>
+                        `;
+                      }
+                    }}
+                  ></iframe>
+                  <div className="instagram-fallback absolute inset-0 bg-gray-100 flex items-center justify-center" style={{display: 'none'}}>
+                    <div className="text-center p-4">
+                      <i className="fab fa-instagram text-4xl mb-2" style={{color: '#56818F'}}></i>
+                      <p className="text-gray-600 text-sm">@laescuelitadelabogado</p>
+                      <p className="text-gray-500 text-xs">Consejos y actualizaciones</p>
+                    </div>
+                  </div>
+                </div>
+                <a href="https://www.instagram.com/laescuelitadelabogado/" target="_blank" rel="noopener noreferrer" className="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white py-2 md:py-3 px-3 md:px-4 rounded-lg flex items-center justify-center space-x-2 hover:from-purple-600 hover:to-pink-600 transition-colors text-sm md:text-base">
+                  <i className="fab fa-instagram"></i>
+                  <span>Ver más en Instagram</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className={`py-16 bg-white section-fade-in ${visibleSections.has('contact') ? 'visible' : ''}`}>
         <div className="container mx-auto px-6">
@@ -861,20 +1002,27 @@ function App() {
             <div className="max-w-4xl mx-auto">
               <div className="space-y-4 mb-12">
                 <p className="text-lg text-gray-700">
-                  <strong>WhatsApp / Celular:</strong> +54 9 11 5858-8382
+                  <strong>WhatsApp / Celular:</strong> <a href="https://wa.me/5491158588382" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">+54 9 11 5858-8382</a>
                 </p>
                 <p className="text-lg text-gray-700">
-                  <strong>Correo:</strong> asistentetucci@gmail.com
+                  <strong>Correo:</strong> <a href="mailto:asistentetucci@gmail.com" className="text-blue-600 hover:text-blue-800 underline">asistentetucci@gmail.com</a>
                 </p>
                 <p className="text-lg text-gray-700">
-                  <strong>Más info:</strong> TikTok @la.escuelita.del.abogado
+                  <strong>Más info:</strong> <a href="https://tiktok.com/@la.escuelita.del.abogado" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">TikTok @la.escuelita.del.abogado</a>
+                </p>
+                <p className="text-lg text-gray-700">
+                  <strong>Instagram:</strong> <a href="https://www.instagram.com/laescuelitadelabogado/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">@laescuelitadelabogado</a>
+                </p>
+                <p className="text-lg text-gray-700">
+                  <strong>YouTube:</strong> <a href="https://www.youtube.com/@robertotucci9591/featured" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">Dr. Roberto Tucci</a>
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="btn-primary px-8 py-4 text-lg font-semibold rounded-lg">
+                <a href="https://wa.me/5491158588382" target="_blank" rel="noopener noreferrer" className="px-8 py-4 text-lg font-semibold rounded-lg inline-block text-white transition-colors" style={{backgroundColor: '#25D366'}} onMouseEnter={(e) => e.target.style.backgroundColor = '#128C7E'} onMouseLeave={(e) => e.target.style.backgroundColor = '#25D366'}>
+                  <i className="fab fa-whatsapp mr-2"></i>
                   Escribir por WhatsApp
-                </button>
-                <button className="btn-secondary px-8 py-4 text-lg font-semibold rounded-lg">
+                </a>
+                <button onClick={() => scrollToSection('subscription')} className="btn-secondary px-8 py-4 text-lg font-semibold rounded-lg">
                   Reservar mi lugar
                 </button>
               </div>
@@ -890,14 +1038,11 @@ function App() {
            
             <div className="max-w-4xl mx-auto">
               <p className="text-lg text-white mb-12">
-                Inscribite hoy y empezá a litigar con un método probado. Sumá práctica, criterio y una comunidad que potencia tu crecimiento desde el primer día.
+                Inscribite hoy y empezá a ejercer como abogado profesional! No dejes pasar esta oportunidad de transformar tu carrera y dejar atrás la inseguridad. En La Escuelita del Abogado te damos todas las herramientas y el respaldo para que trabajes de abogado con confianza desde el primer día.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button onClick={() => scrollToSection('subscription')} className="btn-primary px-8 py-4 text-lg font-semibold rounded-lg">
+              <div className="flex justify-center">
+                <button onClick={() => scrollToSection('subscription')} className="btn-primary px-12 py-5 text-xl font-bold rounded-lg">
                   Inscribirme ahora
-                </button>
-                <button className="btn-secondary px-8 py-4 text-lg font-semibold rounded-lg">
-                  Hablar por WhatsApp
                 </button>
               </div>
             </div>
@@ -911,15 +1056,15 @@ function App() {
           <div className="text-center">
             <h1 className="text-3xl md:text-4xl font-bold text-white mb-8 relative">
               Inscripción al Curso
-              <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1 rounded-full bg-white"></div>
+              <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-20 h-1 rounded-full bg-white"></div>
             </h1>
             <div className="max-w-4xl mx-auto">
               <div className="bg-white rounded-2xl p-8 md:p-12 shadow-2xl">
                 <h2 className="text-2xl md:text-3xl font-bold mb-6" style={{color: '#293949'}}>
-                  ¡Reservá tu lugar ahora!
+                  Inscribite hoy y empezá a ejercer como abogado profesional!
                 </h2>
                 <p className="text-lg mb-8 max-w-2xl mx-auto" style={{color: '#293949'}}>
-                  Accedé al entrenamiento práctico 5 en 1 del Dr. Tucci. Clases en vivo, modelos listos, simulaciones y soporte 365 días.
+                  No dejes pasar esta oportunidad de transformar tu carrera y dejar atrás la inseguridad. En La Escuelita del Abogado te damos todas las herramientas y el respaldo para que trabajes de abogado con confianza desde el primer día.
                 </p>
                 
                 {/* MercadoPago Button */}
@@ -999,22 +1144,36 @@ function App() {
                 <span style={{color: '#293949'}}>Tucci</span>
               </div>
             </div>
-            <div className="flex justify-center space-x-6 mb-8">
-              <a href="https://tiktok.com/@la.escuelita.del.abogado" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-gray-200 rounded-lg flex items-center space-x-2 transition-colors" onMouseEnter={(e) => {e.target.style.backgroundColor = '#56818F'; e.target.style.color = 'white'}} onMouseLeave={(e) => {e.target.style.backgroundColor = '#f3f4f6'; e.target.style.color = 'inherit'}}>
+            <div className="flex justify-center space-x-2 md:space-x-4 mb-8 flex-wrap gap-2">
+              <a href="https://tiktok.com/@la.escuelita.del.abogado" target="_blank" rel="noopener noreferrer" className="px-3 py-2 bg-gray-200 rounded-lg flex items-center space-x-1 md:space-x-2 transition-colors text-xs md:text-sm" onMouseEnter={(e) => {e.target.style.backgroundColor = '#56818F'; e.target.style.color = 'white'}} onMouseLeave={(e) => {e.target.style.backgroundColor = '#f3f4f6'; e.target.style.color = 'inherit'}}>
                 <i className="fab fa-tiktok"></i>
-                <span className="text-sm">@la.escuelita.del.abogado</span>
+                <span className="hidden sm:inline">@la.escuelita.del.abogado</span>
+                <span className="sm:hidden">TikTok</span>
               </a>
-              <a href="https://wa.me/5491158588382" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-gray-200 rounded-lg flex items-center space-x-2 transition-colors" onMouseEnter={(e) => {e.target.style.backgroundColor = '#56818F'; e.target.style.color = 'white'}} onMouseLeave={(e) => {e.target.style.backgroundColor = '#f3f4f6'; e.target.style.color = 'inherit'}}>
+              <a href="https://www.instagram.com/laescuelitadelabogado/" target="_blank" rel="noopener noreferrer" className="px-3 py-2 bg-gray-200 rounded-lg flex items-center space-x-1 md:space-x-2 transition-colors text-xs md:text-sm" onMouseEnter={(e) => {e.target.style.backgroundColor = '#56818F'; e.target.style.color = 'white'}} onMouseLeave={(e) => {e.target.style.backgroundColor = '#f3f4f6'; e.target.style.color = 'inherit'}}>
+                <i className="fab fa-instagram"></i>
+                <span className="hidden sm:inline">@laescuelitadelabogado</span>
+                <span className="sm:hidden">Instagram</span>
+              </a>
+              <a href="https://www.youtube.com/@robertotucci9591/featured" target="_blank" rel="noopener noreferrer" className="px-3 py-2 bg-gray-200 rounded-lg flex items-center space-x-1 md:space-x-2 transition-colors text-xs md:text-sm" onMouseEnter={(e) => {e.target.style.backgroundColor = '#56818F'; e.target.style.color = 'white'}} onMouseLeave={(e) => {e.target.style.backgroundColor = '#f3f4f6'; e.target.style.color = 'inherit'}}>
+                <i className="fab fa-youtube"></i>
+                <span className="hidden sm:inline">Dr. Roberto Tucci</span>
+                <span className="sm:hidden">YouTube</span>
+              </a>
+              <a href="https://wa.me/5491158588382" target="_blank" rel="noopener noreferrer" className="px-3 py-2 bg-gray-200 rounded-lg flex items-center space-x-1 md:space-x-2 transition-colors text-xs md:text-sm" onMouseEnter={(e) => {e.target.style.backgroundColor = '#56818F'; e.target.style.color = 'white'}} onMouseLeave={(e) => {e.target.style.backgroundColor = '#f3f4f6'; e.target.style.color = 'inherit'}}>
                 <i className="fab fa-whatsapp"></i>
-                <span className="text-sm">+54 9 11 5858-8382</span>
+                <span className="hidden sm:inline whitespace-nowrap">+54 9 11 5858-8382</span>
+                <span className="sm:hidden">WhatsApp</span>
               </a>
             </div>
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div>
                 <h5 className="font-bold mb-4">Contacto directo</h5>
-                <p className="mb-2"><strong>WhatsApp / Celular:</strong> +54 9 11 5858-8382</p>
-                <p className="mb-2"><strong>Correo:</strong> asistentetucci@gmail.com</p>
-                <p><strong>Más info:</strong> TikTok @la.escuelita.del.abogado</p>
+                <p className="mb-2"><strong>WhatsApp / Celular:</strong> <a href="https://wa.me/5491158588382" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">+54 9 11 5858-8382</a></p>
+                <p className="mb-2"><strong>Correo:</strong> <a href="mailto:asistentetucci@gmail.com" className="text-blue-600 hover:text-blue-800 underline">asistentetucci@gmail.com</a></p>
+                <p className="mb-2"><strong>Más info:</strong> <a href="https://tiktok.com/@la.escuelita.del.abogado" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">TikTok @la.escuelita.del.abogado</a></p>
+                <p className="mb-2"><strong>Instagram:</strong> <a href="https://www.instagram.com/laescuelitadelabogado/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">@laescuelitadelabogado</a></p>
+                <p><strong>YouTube:</strong> <a href="https://www.youtube.com/@robertotucci9591/featured" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">Dr. Roberto Tucci</a></p>
               </div>
               <div>
                 <h5 className="font-bold mb-4">Quién te acompaña</h5>
@@ -1065,24 +1224,27 @@ function App() {
         zIndex: 60,
         backgroundColor: '#25D366',
         color: 'white',
-        width: '56px',
-        height: '56px',
+        width: '60px',
+        height: '60px',
         borderRadius: '50%',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         textDecoration: 'none',
-        boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+        boxShadow: '0 6px 20px rgba(37, 211, 102, 0.4)',
         transition: 'all 0.3s ease',
-        opacity: isPageLoaded ? 1 : 0
+        opacity: isPageLoaded ? 1 : 0,
+        border: '2px solid white'
       }}
       onMouseEnter={(e) => {
         e.target.style.backgroundColor = '#128C7E';
-        e.target.style.transform = 'scale(1.1)';
+        e.target.style.transform = 'scale(1.15)';
+        e.target.style.boxShadow = '0 8px 25px rgba(37, 211, 102, 0.6)';
       }}
       onMouseLeave={(e) => {
         e.target.style.backgroundColor = '#25D366';
         e.target.style.transform = 'scale(1)';
+        e.target.style.boxShadow = '0 6px 20px rgba(37, 211, 102, 0.4)';
       }}
     >
       <i className="fab fa-whatsapp text-xl"></i>
