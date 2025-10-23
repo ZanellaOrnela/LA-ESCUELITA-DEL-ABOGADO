@@ -30,10 +30,31 @@ function App() {
                 card.classList.add('visible')
               }, index * 150) // 150ms delay between cards
             })
+
+            // Play video when about section is visible
+            if (entry.target.id === 'about') {
+              console.log('About section is visible, playing video')
+              const video = document.getElementById('tucci-video')
+              if (video) {
+                video.currentTime = 0 // Siempre empezar desde el segundo 0
+                video.play().catch(e => console.log('Error playing video:', e))
+              } else {
+                console.log('Video element not found')
+              }
+            }
+          } else {
+            // Pause video and reset to beginning when section is not visible
+            if (entry.target.id === 'about') {
+              const video = document.getElementById('tucci-video')
+              if (video) {
+                video.pause()
+                video.currentTime = 0 // Volver al segundo 0
+              }
+            }
           }
         })
       },
-      { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
+      { threshold: 0.3, rootMargin: '0px 0px -50px 0px' }
     )
 
     // Observe all sections
@@ -190,16 +211,71 @@ function App() {
       {/* About Section */}
       <section id="about" className={`py-16 bg-gray-50 section-fade-in ${visibleSections.has('about') ? 'visible' : ''}`}>
         <div className="container mx-auto px-6">
-          <div className="text-center">
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Este es tu punto de partida
-            </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-              Subí de nivel, acelerá tu práctica y conectá con colegas que ya están en la cancha.
-            </p>
-            <button onClick={() => scrollToSection('subscription')} className="btn-primary px-8 py-4 text-lg font-semibold rounded-lg">
-              Inscribirme ahora
-            </button>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <div>
+                <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                  Este es tu punto de partida
+                </h1>
+                <p className="text-xl text-gray-600 leading-relaxed">
+                  Subí de nivel, acelerá tu práctica y conectá con colegas que ya están en la cancha.
+                </p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-md border-l-4" style={{borderLeftColor: '#56818F'}}>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                  Conoce a tu instructor
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  <strong>Dr. Roberto Tucci</strong> te acompañará en este proceso de formación práctica. 
+                  Más de 20 años de experiencia formando abogados exitosos en diferentes áreas del derecho.
+                </p>
+              </div>
+              
+              <div className="flex flex-col sm:flex-row gap-4">
+                <button onClick={() => scrollToSection('subscription')} className="btn-primary px-8 py-4 text-lg font-semibold rounded-lg flex-1 sm:flex-none">
+                  Inscribirme ahora
+                </button>
+                <a href="https://wa.me/5491158588382" target="_blank" rel="noopener noreferrer" className="px-8 py-4 text-lg font-semibold rounded-lg border-2 transition-colors flex items-center justify-center space-x-2" style={{borderColor: '#56818F', color: '#56818F'}} onMouseEnter={(e) => {e.target.style.backgroundColor = '#56818F'; e.target.style.color = 'white'}} onMouseLeave={(e) => {e.target.style.backgroundColor = 'transparent'; e.target.style.color = '#56818F'}}>
+                  <i className="fab fa-whatsapp"></i>
+                  <span>Consultar por WhatsApp</span>
+                </a>
+              </div>
+            </div>
+            <div className="relative max-w-md mx-auto lg:max-w-lg">
+              <video 
+                id="tucci-video"
+                className="w-full h-auto max-h-96 rounded-lg"
+                controls
+                loop
+                playsInline
+                preload="metadata"
+                onError={(e) => {
+                  console.log('Error loading video:', e);
+                  // Fallback a imagen si el video no carga
+                  const container = e.target.parentElement;
+                  if (container) {
+                    container.innerHTML = `
+                      <img 
+                        src="/WhatsApp Image 2025-10-18 at 19.30.02_73099605.jpg" 
+                        alt="Dr. Roberto Tucci"
+                        className="w-full h-auto object-cover rounded-lg max-h-96"
+                      />
+                    `;
+                  }
+                }}
+              >
+                <source src="/tucci.mp4" type="video/mp4" />
+                <img 
+                  src="/WhatsApp Image 2025-10-18 at 19.30.02_73099605.jpg" 
+                  alt="Dr. Roberto Tucci"
+                  className="w-full h-auto object-cover max-h-96"
+                />
+              </video>
+              <div className="mt-4 text-center">
+                <p className="text-sm text-gray-600 italic">Dr. Roberto Tucci - Más de 20 años de experiencia</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -846,6 +922,39 @@ function App() {
               <button onClick={() => scrollToSection('subscription')} className="btn-primary px-8 py-4 text-lg font-semibold rounded-lg">
                 Aprender con el Dr. Tucci
               </button>
+            </div>
+          </div>
+          
+          {/* Dr. Tucci Profile */}
+          <div className="mt-16 max-w-4xl mx-auto">
+            <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+              <div className="md:flex">
+                <div className="md:w-1/3">
+                  <img 
+                    src="/WhatsApp Image 2025-10-18 at 19.30.02_73099605.jpg" 
+                    alt="Dr. Roberto Tucci"
+                    className="w-full h-80 md:h-96 object-cover"
+                  />
+                </div>
+                <div className="md:w-2/3 p-8">
+                  <h3 className="text-2xl font-bold mb-4" style={{color: '#293949'}}>Dr. Roberto Tucci</h3>
+                  <p className="text-lg text-gray-600 mb-4">
+                    <strong>Más de 20 años de experiencia</strong> en el ejercicio profesional del derecho. 
+                    Especialista en formación práctica de abogados, ha formado a cientos de profesionales 
+                    que hoy ejercen exitosamente en diferentes áreas del derecho.
+                  </p>
+                  <div className="grid md:grid-cols-2 gap-4 text-sm text-gray-600">
+                    <div>
+                      <p><strong>Especialidades:</strong> Civil, Laboral, Penal, Familia, Sucesiones</p>
+                      <p><strong>Formación:</strong> Universidad de Buenos Aires</p>
+                    </div>
+                    <div>
+                      <p><strong>Experiencia:</strong> 20+ años en ejercicio</p>
+                      <p><strong>Método:</strong> Práctica real desde el primer día</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
